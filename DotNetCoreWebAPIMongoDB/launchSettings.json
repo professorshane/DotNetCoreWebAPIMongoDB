@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "dotnetcorewebapimongodb",
+      //"composeLaunchServiceName": "dotnetcoremvcapp",
+      "serviceActions": {
+        "coremvcconsumer": "StartDebugging",
+        "dotnetcorewebapimongodb": "StartDebugging",
+        "mongo-express": "StartWithoutDebugging",
+        "netcorewebapimongodb-dev": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger"
+      //"composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/"
+    }
+  }
+}
